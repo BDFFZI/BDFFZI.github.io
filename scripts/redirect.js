@@ -1,3 +1,6 @@
+let loading = document.getElementById('loading');
+loading.style.display = 'block'
+
 let url = document.querySelector('meta[name="redirect"]').getAttribute('content');
 let request = new XMLHttpRequest();
 request.open("HEAD", url, true);
@@ -9,9 +12,9 @@ request.send();
 
 function OnFailed()
 {
-    let loading = document.getElementById('loading');
-    let text = document.createElement('span')
-    loading.appendChild(text)
+    loading.style.display = 'none'
 
+    let text = document.createElement('span')
     text.textContent = '加载失败';
+    document.body.appendChild(text)
 }
