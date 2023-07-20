@@ -1,0 +1,92 @@
+import React from "react";
+
+function Game() {
+  return (
+    <div>
+      <h2>如何获取最新的本体和DLC?</h2>
+      <ol>
+        <li>
+          <p>先通过以下网站搜索COM3D2，挑选一个合适自己的游戏版本。</p>
+          <ul>
+            <li>
+              <a href="https://ggbases.dlgal.com/" target="_blank">
+                GGBases
+              </a>
+              （国内可用）
+            </li>
+            <li>
+              <a href="https://sukebei.nyaa.si/">Sukebei</a>
+            </li>
+          </ul>
+          <p className="hint">
+            提示：
+            <ul>
+              <li>要下载全DLC版，因为很多Mod会用到里面的功能。</li>
+              <li>
+                国内是COM3D2
+                2.28主流，国外是COM3D2.5，COM3D2的东西在COM3D2.5也能用，但反之不行。
+              </li>
+              <li>
+                COM3D2.5和COM3D2的区别主要是画质，2.5的模型更精细一点，皮肤纹理更丰富，比如能清晰的看到锁骨痕迹。
+              </li>
+              <li>
+                一些插件不兼容新版本，如高跟鞋插件，这会导致一些Mod显示异常（不过我是按CMI为准所以不会装这些插件）。
+              </li>
+              <li>
+                跟随国内主流版本下可以确保插件和汉化的兼容性，越接近这个版本兼容性越好。
+              </li>
+              <li>
+                下载人数越多的资源下载越快，再加上国情原因，实际跟着老外下速度会更快点。
+              </li>
+              <li className="warning">
+                目前的汉化插件是针对COM3D2 2.28版本的，其他版本会略有问题！
+              </li>
+            </ul>
+          </p>
+        </li>
+        <li>
+          <p>获取到游戏的种子或磁链后，使用p2p下载软件进行下载，比如：</p>
+          <ul>
+            <li>百度网盘</li>
+            <li>迅雷</li>
+            <li>
+              <a
+                href="https://github.com/c0re100/qBittorrent-Enhanced-Edition"
+                target="_blank"
+              >
+                qBittorrent
+              </a>
+              （推荐，开源软件，干净安全不限速，平均速度比迅雷百度快）
+            </li>
+            <li>BitComet</li>
+          </ul>
+          <p>
+            以上几种软件的基本原理都是一样的，有关原理的解读和qBittorrent的使用方法可以参照这个
+            <a
+              href="https://www.bilibili.com/video/BV1CM411B7Fu"
+              target="_blank"
+            >
+              视频
+            </a>
+          </p>
+        </li>
+        <li>
+          <p>下载完就可以享受啦！</p>
+          <p>
+            这是官方的
+            <a href="https://com3d2.jp/" target="_blank">
+              COM3D2产品一览
+            </a>
+            ，你可以以此查缺补漏。
+          </p>
+        </li>
+      </ol>
+      <br></br>
+      <h2>后续步骤</h2>
+      <p className="warning">
+        强烈建议之后赶紧把插件装上（不然没汉化也没法用Mod）。
+      </p>
+    </div>
+  );
+}
+export default Game;
