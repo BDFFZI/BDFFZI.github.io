@@ -1,6 +1,6 @@
 import React from "react";
 
-function Game() {
+function GamePage() {
   return (
     <div>
       <h2>如何获取最新的本体和DLC?</h2>
@@ -89,4 +89,10 @@ function Game() {
     </div>
   );
 }
-export default Game;
+
+const MenuItem = {
+  key: "Game",
+  label: "游戏(本体与DLC)",
+}
+
+export default MenuItem;
