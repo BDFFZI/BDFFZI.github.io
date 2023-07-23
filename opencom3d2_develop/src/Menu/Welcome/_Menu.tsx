@@ -27,7 +27,7 @@ function Page() {
 
     return <div>
         <Layout style={{
-            backgroundImage: "linear-gradient(140deg,white, rgba(0, 0, 0,0.5) ),url(./Welcome.jpg)",
+            // backgroundImage: "linear-gradient(140deg,white, rgba(0, 0, 0,0.5) ),url(./Welcome.jpg)",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center left"
