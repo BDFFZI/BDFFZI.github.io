@@ -6,7 +6,6 @@
   for (key in dir) {
     if (window.location.href.includes(key)) {
       window.location.href = window.location.href.replace(key, dir[key]);
-      window.event.returnValue=false;
       break;
     }
   }
