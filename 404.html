@@ -1,5 +1,8 @@
 <script>
-  dir = { "bdffzi.github.io/Page.Blog": "bdffzi-blog.netlify.app" };
+  dir = { 
+    "bdffzi.github.io/Page.Blog": "bdffzi-blog.netlify.app",
+    "bdffzi.github.io/Page.OpenCOM3D2":"opencom3d2.netlify.app"
+  };
   for (key in dir) {
     if (window.location.href.includes(key)) {
       window.location.href = window.location.href.replace(key, dir[key]);
