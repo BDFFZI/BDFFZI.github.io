@@ -23,18 +23,19 @@
 
       if (href === null) {
         textUI.innerText = `重定向失败，你可以选择前往站长的B站主页（https://space.bilibili.com/35949109）`;
-        return;
       }
-
-      const countdownTimer = setInterval(() => {
-        countdown--;
-        countdownElement.innerText = `网址计算成功：${seconds} 秒后跳转到 ${href}`;
-
-        if (countdown === 0) {
-          clearInterval(countdownTimer);
-          window.location.href = href;
-        }
-      }, 1000);
+      else
+      {
+          const countdownTimer = setInterval(() => {
+          countdown--;
+          countdownElement.innerText = `网址计算成功：${seconds} 秒后跳转到 ${href}`;
+  
+          if (countdown === 0) {
+            clearInterval(countdownTimer);
+            window.location.href = href;
+          }
+        }, 1000);
+      }
     </script>
   </body>
 </html>
