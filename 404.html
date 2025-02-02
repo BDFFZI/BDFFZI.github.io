@@ -6,14 +6,14 @@
   <body>
     <p id="text"></p>
     <script>
-      countdown = 4;
-      redirection = {
+      var countdown = 4;
+      var redirection = {
         "bdffzi.github.io/blog": "bdffzi-blog.netlify.app",
         "bdffzi.github.io/opencom3d2": "opencom3d2.netlify.app",
       };
-      textUI = document.getElementById("text");
+      var textUI = document.getElementById("text");
 
-      href = null;
+      var href = null;
       for (key in redirection) {
         if (window.location.href.includes(key)) {
           href = window.location.href.replace(key, redirection[key]);
@@ -28,7 +28,7 @@
       {
           const countdownTimer = setInterval(() => {
           countdown--;
-          countdownElement.innerText = `网址计算成功：${seconds} 秒后跳转到 ${href}`;
+          textUI.innerText = `网址计算成功：${seconds} 秒后跳转到 ${href}`;
   
           if (countdown === 0) {
             clearInterval(countdownTimer);
