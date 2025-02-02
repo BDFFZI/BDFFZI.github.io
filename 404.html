@@ -1,12 +1,37 @@
-<script>
-  dir = { 
-    "bdffzi.github.io/blog": "bdffzi-blog.netlify.app",
-    "bdffzi.github.io/opencom3d2":"opencom3d2.netlify.app"
-  };
-  for (key in dir) {
-    if (window.location.href.includes(key)) {
-      window.location.href = window.location.href.replace(key, dir[key]);
-      break;
-    }
-  }
-</script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <p id="text"></p>
+    <script>
+      const countdown = 4;
+      const redirection = {
+        "bdffzi.github.io/blog": "bdffzi-blog.netlify.app",
+        "bdffzi.github.io/opencom3d2": "opencom3d2.netlify.app",
+      };
+      const textUI = document.getElementById("text");
+
+      var href = null;
+      for (key in redirection) {
+        if (window.location.href.includes(key)) {
+          href = window.location.href.replace(key, dir[key]);
+          break;
+        }
+      }
+
+      if (href === null) textUI.innerText = `重定向失败，你可以选择前往站长的B站主页（https://space.bilibili.com/35949109）`;
+
+      const countdownTimer = setInterval(() => {
+        countdown--;
+        countdownElement.innerText = `网址计算成功：${seconds} 秒后跳转到 ${href}`;
+
+        if (countdown === 0) {
+          clearInterval(countdownTimer);
+          window.location.href = href;
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
